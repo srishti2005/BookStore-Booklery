@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Fictional Book",
+        "title": "Thea Stilton",
+        "price": 0,
+        "category": "Free",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 2,
+        "name": "Fantasy Book",
+        "title": "Harry Porter: 6",
+        "price": 60,
+        "category": "HP",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 3,
+        "name": "Fantasy Book",
+        "title": "Harry Porter: 5",
+        "price": 50,
+        "category": "HP",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 4,
+        "name": "Fantasy Book",
+        "title": "Harry Porter: 4",
+        "price": 50,
+        "category": "HP",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 5,
+        "name": "Fantasy Book",
+        "title": "Harry Porter: 3",
+        "price": 40,
+        "category": "HP",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 6,
+        "name": "Fantasy Book",
+        "title": "Harry Porter: 2",
+        "price": 30,
+        "category": "HP",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 7,
+        "name": "Fantasy Book",
+        "title": "Harry Porter: 1",
+        "price": 20,
+        "category": "HP",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 8,
+        "name": "Fictional Book",
+        "title": "Gernimo Stilton",
+        "price": 0,
+        "category": "Free",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    },
+    {
+        "id": 9,
+        "name": "SciFi Book",
+        "title": "Atwood",
+        "price": 0,
+        "category": "Free",
+        "image": "https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24372889.htm#fromView=search&page=1&position=2&uuid=3d64d2f5-9a96-4c28-aabd-af25f5279125"
+    }
+]

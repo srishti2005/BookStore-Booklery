@@ -1,30 +1,33 @@
-import React from "react";
+import React from 'react';
+import Course from './Course';
 
-function Cards({ item }) {
+const courseData = [
+  { id: 1, title: " Eternal Echoes ", description: "Science Fiction, Dystopian, Mystery, Thriller" },
+  { id: 2, title: "Whispers of Winter", description: "Gothic Fiction, Mystery, Psychological Thriller" },
+  { id: 3, title: "Veil of Ashes", description: "Fantasy, Adventure, Dark Fantasy, Mythology" },
+  { id: 4, title: "Threads of Time", description: "Science Fiction, Time Travel, Thriller, Philosophical Fiction" },
+  { id: 5, title: "Shadows of the Sea", description: "Paranormal Mystery, Supernatural Thriller" },
+  { id: 7, title: "Echoes of Elysium", description: "Epic Fantasy, Adventure, Mythology" },
+  { id: 8, title: "The Quantum Paradox", description: "Epic Fantasy, Adventure, Mythology" },
+  { id: 9, title: "Shadows of the Bayou", description: "Epic Fantasy, Adventure, Mythology" },
+  { id: 10, title: "Forgotten Kingdoms", description: "Epic Fantasy, Adventure, Mythology" },
+  { id: 11, title: "remembered Kingdoms", description: "Epic Fantasy, Adventure, Thriller" }
+  // Add more courses as needed
+];
+
+const Cards = () => {
   return (
-    <>
-      <div className="mt-4 my-3 p-3">
-        <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
-          <figure>
-            <img src={item.image} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">
-              {item.name}
-              <div className="badge badge-secondary">{item.category}</div>
-            </h2>
-            <p>{item.title}</p>
-            <div className="card-actions justify-between">
-              <div className="badge badge-outline">${item.price}</div>
-              <div className=" cursor-pointer px-2 py-1 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200">
-                Buy Now
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+      gap: '1rem',
+      padding: '2rem',
+    }}>
+      {courseData.map(course => (
+        <Course key={course.id} title={course.title} description={course.description} />
+      ))}
+    </div>
   );
-}
+};
 
 export default Cards;

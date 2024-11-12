@@ -1,52 +1,31 @@
-import React, { useEffect, useState } from "react";
-import Cards from "./Cards";
-import axios from "axios";
-import { Link } from "react-router-dom";
-function Course() {
-  const [book, setBook] = useState([]);
-  useEffect(() => {
-    const getBook = async () => {
-      try {
-        const res = await axios.get("http://localhost:4001/book");
-        console.log(res.data);
-        setBook(res.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getBook();
-  }, []);
+import React from 'react';
+
+const Course = ({ title, description }) => {
   return (
-    <>
-      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
-        <div className="mt-28 items-center justify-center text-center">
-          <h1 className="text-2xl  md:text-4xl">
-            We're delighted to have you{" "}
-            <span className="text-pink-500"> Here! :)</span>
-          </h1>
-          <p className="mt-12">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-            assumenda? Repellendus, iste corrupti? Tempore laudantium
-            repellendus accusamus accusantium sed architecto odio, nisi expedita
-            quas quidem nesciunt debitis dolore non aspernatur praesentium
-            assumenda sint quibusdam, perspiciatis, explicabo sequi fugiat amet
-            animi eos aut. Nobis quisquam reiciendis sunt quis sed magnam
-            consequatur!
-          </p>
-          <Link to="/">
-            <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
-              Back
-            </button>
-          </Link>
-        </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
-          {book.map((item) => (
-            <Cards key={item.id} item={item} />
-          ))}
-        </div>
-      </div>
-    </>
+    <div style={{
+      backgroundColor: '#FFD700',  // Light yellow background color
+      borderRadius: '8px',
+      padding: '1.5rem',  // Added padding for inner spacing
+      boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+      textAlign: 'center',
+    }}>
+      <h1 style={{fontWeight:'100%', color: '#6B2A8E', fontSize: '2.5rem'}}></h1>
+      <h2 style={{ color: '#6B2A8E', marginBottom: '0.5rem',fontWeight:'100%' }}>{title}</h2>
+      <p style={{ color: '#black', fontSize: '0.8rem' }}>{description}</p> {/* Lightened text color */}
+      <button style={{
+        marginTop: '1rem',
+        padding: '0.5rem 1rem',
+        backgroundColor: '#fff',
+        color: '#6B2A8E',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+        hover:'#FFD700'
+      }}>
+        Learn More
+      </button>
+    </div>
   );
-}
+};
 
 export default Course;
